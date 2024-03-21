@@ -1,0 +1,11 @@
+
+// 		EDIT THE CODE BELOW SO THAT IT CONTAINS:
+// 		1. Your username/style_code
+// 		2. Your access token
+
+const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/YOUR-USERNAME/YOUR-STYLE-CODE/draft/tiles/{z}/{x}/{y}?access_token=YOUR-ACCESS-TOKEN-HERE', {
+	maxZoom: 19,
+	tileSize: 512,
+    zoomOffset: -1,
+	attribution: '&copy; OpenStreetMap | MapBox - Projection: WGS84 Spherical Mercator'
+}).addTo(map);
