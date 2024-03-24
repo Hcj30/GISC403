@@ -1,6 +1,6 @@
 
 // UPDATE THIS WITH A BETTER STARTING LATITUDE AND LONGITUDE AND ZOOM LEVEL
-const map = L.map('map').setView([51.505, -0.09], 11);
+const map = L.map('map').setView([-43.510406, 172.686218], 13.39);
 L.control.scale().addTo(map);
 
 
@@ -15,17 +15,26 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
 // Also note that each has its own 'pop-up.'  Edit the text in each of these to say why each location is important to you.
-const marker1 = L.marker([51.5, -0.09]).addTo(map)
-	.bindPopup('Hello! I am a TEST popup.');
+const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
+    .bindPopup('Site 1: Elsie Locke\'s cottage');
 
-const marker2 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
-	.bindPopup('Hello! I am a popup.');
+const marker2 = L.marker([-43.513646327701295, 172.6657229998654]).addTo(map)
+    .bindPopup('Site 5: Secret Soccer pitch');
 
-const marker3 = L.marker([51.3, -0.00]).addTo(map)
-	.bindPopup('Hello! I am a popup.');
+const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
+    .bindPopup('Site 7: Fork in the road');
 
-const marker4 = L.marker([51.6, -0.09]).addTo(map)
-	.bindPopup('Hello! I am a popup.').openPopup();
+const marker4 = L.marker([-43.50166007681469, 172.6745144076115]).addTo(map)
+    .bindPopup('Site 13: Asphalted way');
+
+const marker5 = L.marker([-43.494768686466934, 172.70380156717445]).addTo(map)
+    .bindPopup('Site 19: Tree');
+
+const marker6 = L.marker([-43.49946861078792, 172.6974843514607]).addTo(map)
+    .bindPopup('Site 25: Playground and rock memorial');
+
+const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
+    .bindPopup('Site 29: Cul de sac');
 
 
 
@@ -43,15 +52,17 @@ geojsonLayer.addTo(map);
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
 const polygon = L.polygon([
-		[51.509, -0.08],
-		[51.503, -0.06],
-		[51.51, -0.007],
-		[51.50, -0.027],
-		[51.40, -0.007]
+		[-43.5233342406637, 172.6479671005655],
+    [-43.513646327701295, 172.6657229998654],
+    [-43.518125340913045, 172.67587946453892],
+    [-43.50166007681469, 172.6745144076115],
+    [-43.494768686466934, 172.70380156717445],
+    [-43.49946861078792, 172.6974843514607],
+    [-43.51703428870617, 172.72406434974968]
 	],{
-		color: 'blue',
+		color: 'red',
 		fillColor: '#f03',
-	}).addTo(map).bindPopup('I am a polygon.');
+	}).addTo(map).bindPopup('Rephotography Zone');
 
 
 
