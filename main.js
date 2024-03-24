@@ -20,25 +20,25 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
  //   .bindPopup('<h3>Site 1: Elsie Locke\'s cottage at 392</h3><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
-    .bindPopup('<p><a href="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" target="_blank">Site 1: Elsie Locke\'s cottage at 392</a></p>');
+    .bindPopup('<p><a href="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" target="_blank">Avon Loop: Elsie Locke\'s cottage at 392</a></p>');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654]).addTo(map)
-    .bindPopup('Site 5: Secret Soccer pitch');
+    .bindPopup('Richmond: Secret soccer pitch');
 
 const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
-    .bindPopup('Site 7: Fork in the road');
+    .bindPopup('Dallington: Fork in the road');
 
 const marker4 = L.marker([-43.50166007681469, 172.6745144076115]).addTo(map)
-    .bindPopup('Site 13: Asphalted way');
+    .bindPopup('Horseshoe Lake: Asphalted way');
 
 const marker5 = L.marker([-43.494768686466934, 172.70380156717445]).addTo(map)
-    .bindPopup('Site 19: Tree');
+    .bindPopup('Burwood: Anzac Drive planting');
 
 const marker6 = L.marker([-43.49946861078792, 172.6974843514607]).addTo(map)
-    .bindPopup('Site 25: Playground and rock memorial');
+    .bindPopup('Burwood: Playground and rock memorial');
 
 const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
-    .bindPopup('Site 29: Cul de sac');
+    .bindPopup('Bexley: Cul de sac');
 
 
 
