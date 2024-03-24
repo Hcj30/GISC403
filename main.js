@@ -15,8 +15,11 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
 // Also note that each has its own 'pop-up.'  Edit the text in each of these to say why each location is important to you.
+// const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
+//    .bindPopup('Site 1: Elsie Locke\'s cottage');
+
 const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
-    .bindPopup('Site 1: Elsie Locke\'s cottage');
+    .bindPopup('<h3>Site 1: Elsie Locke\'s cottage at 392</h3><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654]).addTo(map)
     .bindPopup('Site 5: Secret Soccer pitch');
