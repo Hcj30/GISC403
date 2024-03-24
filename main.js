@@ -19,7 +19,8 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //    .bindPopup('Site 1: Elsie Locke\'s cottage');
 
 const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
-    .bindPopup('<h3>Site 1: Elsie Locke\'s cottage at 392</h3><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
+ //   .bindPopup('<h3>Site 1: Elsie Locke\'s cottage at 392</h3><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
+    .bindPopup('<p><a href="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" target="_blank">Site 1: Elsie Locke\'s cottage at 392</a></p>');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654]).addTo(map)
     .bindPopup('Site 5: Secret Soccer pitch');
