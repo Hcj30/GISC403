@@ -47,7 +47,7 @@ const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
 // Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
 var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
 		color: 'green',
-		fillColor: ''#f03', // transparent fill color
+		fillColor: '#f03', // transparent fill color
 		fillOpacity: 0.5,
 	});
 geojsonLayer.addTo(map);
@@ -64,7 +64,7 @@ const polygon = L.polygon([
     [-43.513646327701295, 172.6479671005655], // Bottom-right corner
 	],{
 		color: 'blue',
-		fillColor: 'none',
+		fillColor: '#f03',
 	}).addTo(map).bindPopup('Rephotography Zone');
 
 
