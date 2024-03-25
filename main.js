@@ -57,17 +57,14 @@ geojsonLayer.addTo(map);
 
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
-const polygon = L.polygon([
-		[-43.5233342406637, 172.6479671005655],
-    [-43.513646327701295, 172.6657229998654],
-    [-43.518125340913045, 172.67587946453892],
-    [-43.50166007681469, 172.6745144076115],
-    [-43.494768686466934, 172.70380156717445],
-    [-43.49946861078792, 172.6974843514607],
-    [-43.51703428870617, 172.72406434974968]
+const polygon = L.polygon([	
+	 [-43.5233342406637, 172.6479671005655], // Bottom-left corner
+    [-43.5233342406637, 172.72406434974968], // Top-left corner
+    [-43.513646327701295, 172.72406434974968], // Top-right corner
+    [-43.513646327701295, 172.6479671005655], // Bottom-right corner
 	],{
 		color: 'blue',
-		fillColor: '#f03',
+		fillColor: 'none',
 	}).addTo(map).bindPopup('Rephotography Zone');
 
 
