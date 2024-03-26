@@ -46,9 +46,9 @@ const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
 // These are the Territorial Authority Polygons that are being accessed from a 3rd party server.
 // Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
 var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
-		color: 'green',
-		fillColor: '#f03', // transparent fill color
-		fillOpacity: 0.5,
+		color: '#76ab69', //stroke colour
+		fillColor: 'transparent', // transparent fill color
+		fillOpacity: 1.0,
 	});
 geojsonLayer.addTo(map);
 
