@@ -64,6 +64,7 @@ const polygon = L.polygon([
     [-43.513646327701295, 172.6479671005655], // Bottom-right corner
 	],{
 		color: '#ffff99',
+		weight: '1',
 		fillColor: '#ffff99',
 		fillOpacity: 0.1,
 	}).addTo(map).bindPopup('Rephotography Zone');
