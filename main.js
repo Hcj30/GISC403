@@ -33,19 +33,19 @@ const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
     .bindPopup('Richmond: Whats here? A hidden soccer pitch');
 
-const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
+const marker3 = L.marker([-43.518125340913045, 172.67587946453892], { icon: customIcon }).addTo(map)
     .bindPopup('Dallington: Whats here? A fork in the road');
 
-const marker4 = L.marker([-43.50166007681469, 172.6745144076115]).addTo(map)
+const marker4 = L.marker([-43.50166007681469, 172.6745144076115], { icon: customIcon }).addTo(map)
     .bindPopup('Horseshoe Lake: Whats here? A dissapearing lane');
 
-const marker5 = L.marker([-43.494768686466934, 172.70380156717445]).addTo(map)
+const marker5 = L.marker([-43.494768686466934, 172.70380156717445], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Whats here? Anzac Drive planting initiative');
 
-const marker6 = L.marker([-43.49946861078792, 172.6974843514607]).addTo(map)
+const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Whats here? Playground and rock memorial');
 
-const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
+const marker7 = L.marker([-43.51703428870617, 172.72406434974968], { icon: customIcon }).addTo(map)
     .bindPopup('Bexley: Whats here? A wetland Cul de sac');
 
 
