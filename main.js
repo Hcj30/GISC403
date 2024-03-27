@@ -14,7 +14,7 @@ const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1ok3un
 // END REPLACE BLOCK
 
 const customIcon = L.icon({
-  iconUrl: 'https://cdn3.iconfinder.com/data/icons/glypho-free/64/camera-outline-512.png', // Specify the URL to your custom icon image
+  iconUrl: 'https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_camera_icon-512.png', // Specify the URL to your custom icon image
   iconSize: [32, 32], // Set the size of the icon
   popupAnchor: [0, -16] // Adjust the popup anchor position relative to the icon
 });
@@ -30,22 +30,22 @@ const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
     .bindPopup('<p>Avon Loop: Elsie Locke\'s cottage</p><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
-    .bindPopup('TEST Richmond: Secret soccer pitch');
+    .bindPopup('Richmond: Whats here? A hidden soccer pitch');
 
 const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
-    .bindPopup('Dallington: Fork in the road');
+    .bindPopup('Dallington: Whats here? A fork in the road');
 
 const marker4 = L.marker([-43.50166007681469, 172.6745144076115]).addTo(map)
-    .bindPopup('Horseshoe Lake: Asphalted way');
+    .bindPopup('Horseshoe Lake: Whats here? A dissapearing lane');
 
 const marker5 = L.marker([-43.494768686466934, 172.70380156717445]).addTo(map)
-    .bindPopup('Burwood: Anzac Drive planting');
+    .bindPopup('Burwood: Whats here? Anzac Drive planting initiative');
 
 const marker6 = L.marker([-43.49946861078792, 172.6974843514607]).addTo(map)
-    .bindPopup('Burwood: Playground and rock memorial');
+    .bindPopup('Burwood: Whats here? Playground and rock memorial');
 
 const marker7 = L.marker([-43.51703428870617, 172.72406434974968]).addTo(map)
-    .bindPopup('Bexley: Cul de sac');
+    .bindPopup('Bexley: Whats here? A wetland Cul de sac');
 
 
 
