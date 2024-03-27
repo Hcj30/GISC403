@@ -71,10 +71,10 @@ geojsonLayer.addTo(map);
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
 const polygon = L.polygon([	
-	 [-43.5233342406637, 172.6479671005655], // Bottom-left corner
-    [-43.5233342406637, 172.72406434974968], // Top-left corner
-    [-43.513646327701295, 172.72406434974968], // Top-right corner
-    [-43.513646327701295, 172.6479671005655], // Bottom-right corner
+	[-43.528555511862564, 172.64574794498358],
+	[-43.528555511862564, 172.73029115380038],
+  	[-43.49356282041681, 172.73029115380038],
+  	[-43.49356282041681, 172.64574794498358]
 	],{
 		color: '#ffff99',
 		weight: '1',
