@@ -88,7 +88,7 @@ const polygon = L.polygon([
 		color: 'black',
 		weight: '1',
 		fillColor: 'black',
-		fillOpacity: 0.1,
+		fillOpacity: 0.05,
 	}).addTo(map).bindPopup('Rephotography Zone');
 
 
