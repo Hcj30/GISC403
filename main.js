@@ -13,6 +13,11 @@ const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1ok3un
 }).addTo(map);
 // END REPLACE BLOCK
 
+const customIcon = L.icon({
+  iconUrl: 'https://cdn3.iconfinder.com/data/icons/glypho-free/64/camera-outline-512.png', // Specify the URL to your custom icon image
+  iconSize: [32, 32], // Set the size of the icon
+  popupAnchor: [0, -16] // Adjust the popup anchor position relative to the icon
+});
 
 // There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
 // Also note that each has its own 'pop-up.'  Edit the text in each of these to say why each location is important to you.
@@ -24,7 +29,7 @@ const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
  //   .bindPopup('<p><a href="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" target="_blank">Avon Loop: Elsie Locke\'s cottage at 392</a></p>');
     .bindPopup('<p>Avon Loop: Elsie Locke\'s cottage</p><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
 
-const marker2 = L.marker([-43.513646327701295, 172.6657229998654]).addTo(map)
+const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
     .bindPopup('Richmond: Secret soccer pitch');
 
 const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
