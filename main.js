@@ -42,7 +42,7 @@ const marker4 = L.marker([-43.50166007681469, 172.6745144076115], { icon: custom
 const marker5 = L.marker([-43.494768686466934, 172.70380156717445], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Whats here? Anzac Drive planting initiative');
 
-const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon }).addTo(map)
+const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon, rotationAngle: 45}).addTo(map)
     .bindPopup('Burwood: Whats here? Playground and rock memorial');
 
 const marker7 = L.marker([-43.51703428870617, 172.72406434974968], { icon: customIcon }).addTo(map)
