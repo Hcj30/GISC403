@@ -5,12 +5,13 @@ L.control.scale().addTo(map);
 
 
 // REPLACE THIS BLOCK OF CODE WITH YOUR MAPBOX CODE
-const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/gdmckenzie/clu1ok3un022601oi4squ74xc/draft/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ2RtY2tlbnppZSIsImEiOiJjbHNtZjZmdXEwb2h4MmltdGJodXd1MmpyIn0.UrHBVKEcCwL1MBqo8k7bmA', {    
 	maxZoom: 19,
-	attribution: '&copy; OpenStreetMap &amp; MapBox'
+	tileSize: 512,
+    zoomOffset: -1,
+	attribution: '&copy; OpenStreetMap | MapBox - Projection: WGS84 Spherical Mercator'
 }).addTo(map);
 // END REPLACE BLOCK
-
 
 
 // There are four markers below.  Each has a latitude and longitude.  Edit these to be your unique places of interest.
