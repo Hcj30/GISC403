@@ -30,7 +30,7 @@ const marker1 = L.marker([-43.5233342406637, 172.6479671005655]).addTo(map)
     .bindPopup('<p>Avon Loop: Elsie Locke\'s cottage</p><img src="https://photos.google.com/share/AF1QipP-To0LGDYW5lqARqxN4HXguSeKkwR7R6-EG0HuR7QZ8XuZ6NVp3O4AlGJ3cv-_bw/photo/AF1QipNFbHqYySSOQ6io6a2CXR_s20G-QDiqnbrgkOOu" alt="Image">');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
-    .bindPopup('Richmond: Secret soccer pitch');
+    .bindPopup('TEST Richmond: Secret soccer pitch');
 
 const marker3 = L.marker([-43.518125340913045, 172.67587946453892]).addTo(map)
     .bindPopup('Dallington: Fork in the road');
