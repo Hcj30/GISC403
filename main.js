@@ -49,15 +49,53 @@ const marker7 = L.marker([-43.51703428870617, 172.72406434974968], { icon: custo
 
 
 
-// These are the Territorial Authority Polygons that are being accessed from a 3rd party server.
-// Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
-var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
-		color: 'white', //stroke colour
-		fillColor: 'transparent', // transparent fill color
-		fillOpacity: 1.0,
-	});
-geojsonLayer.addTo(map);
 
+// Load your GeoJSON data
+var geojsonLayer = new L.GeoJSON.AJAX("path/to/your/territorial_authority.geojson", {
+    style: function (feature) {
+        // Check if the feature corresponds to the area where your data sits
+        var isOtherArea = !checkIfMyArea(feature); // Reverse the logic to check for other areas
+
+        // Set style based on whether it's your area or not
+        return {
+            fillColor: isOtherArea ? 'green' : 'transparent', // Fill color for other areas or transparent for your area
+            color: 'red', // Stroke color for all polygons
+            fillOpacity: 0.5, // Fill opacity
+            weight: 2 // Stroke width
+        };
+    }
+});
+geojsonLayer.addTo(map); // Add the GeoJSON layer to the map
+
+// Function to check if a feature corresponds to the area where your data sits
+function checkIfMyArea(feature) {
+    // Implement your logic to check if the feature is the area where your data sits
+    // You might compare feature properties or geometry coordinates
+    // For example, check if the feature contains specific coordinates
+    var myCoordinates = [[-43.528555511862564, 172.64574794498358],
+	[-43.528555511862564, 172.73029115380038],
+  	[-43.49356282041681, 172.73029115380038],
+  	[-43.49356282041681, 172.64574794498358]
+	]]; // Define your coordinates
+    var coordinates = feature.geometry.coordinates[0]; // Assuming it's a Polygon geometry
+
+    // Check if any of your coordinates are inside the feature's polygon
+    for (var i = 0; i < myCoordinates.length; i++) {
+        if (isPointInsidePolygon(myCoordinates[i], coordinates)) {
+            return true; // Found a match
+        }
+    }
+    return false; // No match found
+}
+
+// Function to check if a point is inside a polygon (helper function)
+function isPointInsidePolygon(point, polygon) {
+    // Implement a point-in-polygon algorithm (e.g., Ray Casting Algorithm)
+    // This is a simplified example and may need a more robust implementation for real use
+    // Adapt this function based on your needs and any libraries you may be using
+    // Here's a simple example using Leaflet's LatLngBounds.contains function:
+    return L.latLngBounds(polygon).contains(point);
+}
 
 
 
