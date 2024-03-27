@@ -36,12 +36,12 @@ const marker3 = L.marker([-43.518125340913045, 172.67587946453892], { icon: cust
     .bindPopup('Dallington: Whats here? A fork in the road leading to a secret garden and a new pedestrian bridge');
 
 const marker4 = L.marker([-43.50166007681469, 172.6745144076115], { icon: customIcon }).addTo(map)
-    .bindPopup('Waikākāriki: Whats here? A dissapearing lane: Witness natures rapid regeneration taking place');
+    .bindPopup('Waikākāriki: Whats here? A disapearing lane: Witness natures rapid regeneration taking place');
 
 const marker5 = L.marker([-43.494768686466934, 172.70380156717445], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Discover a school planting initiative, showcasing assisted regeneration next to the mahinga kai exemplar');
 
-const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon, rotationAngle: 45}).addTo(map)
+const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Whats here? Community designed playground and large rock memorial');
 
 const marker7 = L.marker([-43.51703428870617, 172.72406434974968], { icon: customIcon }).addTo(map)
