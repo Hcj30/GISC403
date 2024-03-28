@@ -89,7 +89,7 @@ const polygon = L.polygon([
 		weight: '1',
 		fillColor: 'black',
 		fillOpacity: 0.05,
-	}).addTo(map).bindPopup('Rephotography Zone');
+	}).addTo(map).bindPopup('Rephotography Zone: this doesnt work, but I dont know why!!!');
 
 
 
