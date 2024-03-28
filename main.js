@@ -27,7 +27,7 @@ const customIcon = L.icon({
 
 
 const marker1 = L.marker([-43.5233342406637, 172.6479671005655], { icon: customIcon }).addTo(map)
-    .bindPopup('Avon Loop: Whats here? Elsie Locke's cottage, a significant location due to its historical and cultural significance');
+    .bindPopup('Avon Loop: Whats here? Elsie Locke'/s cottage, a significant location due to its historical and cultural significance');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
     .bindPopup('Richmond: Whats here? Discover a hidden soccer pitch in this area');
@@ -39,7 +39,7 @@ const marker4 = L.marker([-43.50166007681469, 172.6745144076115], { icon: custom
     .bindPopup('Waikākāriki: Whats here? A disapearing lane: Witness natures rapid regeneration taking place');
 
 const marker5 = L.marker([-43.494768686466934, 172.70380156717445], { icon: customIcon }).addTo(map)
-    .bindPopup('Burwood: Discover a school planting initiative, showcasing assisted regeneration next to the mahinga kai exemplar');
+    .bindPopup('Burwood: Whats here? Discover a school planting initiative, showcasing assisted regeneration next to the mahinga kai exemplar');
 
 const marker6 = L.marker([-43.49946861078792, 172.6974843514607], { icon: customIcon }).addTo(map)
     .bindPopup('Burwood: Whats here? Community designed playground and large rock memorial');
