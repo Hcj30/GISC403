@@ -89,9 +89,7 @@ const polygon = L.polygon([
 		weight: '1',
 		fillColor: 'black',
 		fillOpacity: 0.05,
-	}).addTo(map).bindPopup('Rephotography Zone'); map.on('click', function () {
-  // This empty function enables click interaction and default behavior for popups
-});
+	}).addTo(map).bindPopup('Rephotography Zone');
 
 
 
