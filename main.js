@@ -27,7 +27,7 @@ const customIcon = L.icon({
 
 
 const marker1 = L.marker([-43.5233342406637, 172.6479671005655], { icon: customIcon }).addTo(map)
-    .bindPopup('Avon Loop: Whats here? Elsie Locke'/s cottage, a significant location due to its historical and cultural significance');
+    .bindPopup('Avon Loop: Whats here? Elsie Locke/'s cottage, a significant location due to its historical and cultural significance');
 
 const marker2 = L.marker([-43.513646327701295, 172.6657229998654], { icon: customIcon }).addTo(map)
     .bindPopup('Richmond: Whats here? Discover a hidden soccer pitch in this area');
